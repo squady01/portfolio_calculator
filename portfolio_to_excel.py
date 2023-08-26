@@ -34,7 +34,7 @@ with open('portfolio.csv') as portfolio_file:
         else:
             print("{}: {}".format(ticker, data))
 
-        time.sleep(5)
+        time.sleep(15)
 
 
 # convertir la liste en dataframe pandas
@@ -50,7 +50,7 @@ df['Created'] = now.strftime("%Y-%m-%d %H:%M:%S")
 
 
 # Obtenir la date et l'heure actuelles pour nommer le fichier Excel
-filename = "{}.xlsx".format(now.strftime("%Y-%m-%d %H:%M:%S"))
+filename = "{}.xlsx".format(now.strftime("%Y-%m-%d %H_%M_%S"))
 
 if not os.path.exists("output"):
     os.mkdir("output")
