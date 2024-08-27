@@ -34,7 +34,7 @@ with open('portfolio.csv') as portfolio_file:
         else:
             print("{}: {}".format(ticker, data))
 
-        time.sleep(15)
+        time.sleep(30)
 
 
 # convertir la liste en dataframe pandas
